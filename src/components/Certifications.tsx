@@ -31,6 +31,7 @@ export const Certifications: React.FC = () => {
   const achievements = [
     "Secured 10.0 in 10th grade",
     "Achieved 982/1000 in Intermediate"
+    "Achieved 4th place in a national level Hackathon-HACKFINITI"
   ];
 
   return (
