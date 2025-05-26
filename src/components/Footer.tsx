@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
         
         <div className="mt-10 pt-6 border-t border-gray-800 text-center text-gray-400">
           <p className="flex items-center justify-center gap-1">
-            Made with <Heart size={16} className="text-red-500" /> by Supragna Konakala &copy; {currentYear}
+            Made by Supragna Konakala &copy; {currentYear}
           </p>
         </div>
       </div>
