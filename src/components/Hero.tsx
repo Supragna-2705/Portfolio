@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-blue-100 p-8">
               <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full mx-auto mb-4"></div>
               <h3 className="text-xl font-semibold text-center mb-2">Supragna Konakala</h3>
-              <p className="text-gray-600 text-center mb-6">BTech CSE (Data Science)</p>
+              
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Mail size={16} className="text-blue-500" />
