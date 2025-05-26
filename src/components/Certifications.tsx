@@ -4,25 +4,35 @@ import { Award, Check } from 'lucide-react';
 interface Certification {
   title: string;
   issuer: string;
+  file: string;
 }
 
 export const Certifications: React.FC = () => {
   const certifications: Certification[] = [
     {
       title: "Java Fundamentals and Foundations",
-      issuer: "Oracle Academy"
+      issuer: "Oracle Academy",
+      file: "certificate-2(java).pdf"
     },
     {
       title: "Programming Languages (C, Java, Python)",
-      issuer: "NPTEL"
+      issuer: "NPTEL",
+      file: "Programming In Java.pdf"
     },
     {
       title: "Programming with Python",
-      issuer: "SkillUp by Simplilearn"
+      issuer: "SkillUp by Simplilearn",
+      file: "supragna skill up 6760.pdf"
     },
     {
       title: "AI-ML Virtual Internship",
-      issuer: "Google"
+      issuer: "Google",
+      file: "google(aicte).pdf"
+    },
+    {
+      title: "The Joy Of Computing Using Python",
+      issuer: "NPTEL",
+      file: "The Joy Of Computing Using Python.pdf"
     }
   ];
 
@@ -49,7 +59,14 @@ export const Certifications: React.FC = () => {
               <li key={index} className="flex gap-2">
                 <Check size={20} className="text-green-500 flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-medium">{cert.title}</p>
+                  <a
+                    href={`/certificates/${cert.file}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-blue-600 hover:underline"
+                  >
+                    {cert.title}
+                  </a>
                   <p className="text-sm text-gray-600">{cert.issuer}</p>
                 </div>
               </li>

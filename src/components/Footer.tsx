@@ -1,5 +1,6 @@
 import React from 'react';
-import { Heart, Download, Video, Linkedin, Github as GitHub, Mail } from 'lucide-react';
+import { Heart, Download, Video, Linkedin, Github as GitHub, Mail, Eye } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -55,19 +56,20 @@ export const Footer: React.FC = () => {
             <div className="space-y-3">
               <a 
                 href="/resume.pdf" 
-                download 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
               >
-                <Download size={16} />
-                <span>Download Resume</span>
+                <Eye size={16} />
+                <span>View Resume</span>
               </a>
-              <a 
-                href="#video-resume" 
+              <Link 
+                to="/video-resume" 
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
               >
                 <Video size={16} />
                 <span>View Video Resume</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

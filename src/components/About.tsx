@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Code, Server, Brain, Video } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const About: React.FC = () => {
   return (
@@ -49,13 +50,13 @@ export const About: React.FC = () => {
       </div>
       
       <div className="mt-16 flex justify-center">
-        <a 
-          href="#video-resume" 
+        <Link 
+          to="/video-resume" 
           className="btn-secondary flex items-center gap-2"
         >
           <Video size={18} />
           Watch My Video Resume
-        </a>
+        </Link>
       </div>
     </section>
   );

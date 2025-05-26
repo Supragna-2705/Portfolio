@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Download, Video } from 'lucide-react';
+import { Menu, X, Download, Video, Eye } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,14 +58,14 @@ export const Header: React.FC = () => {
             ))}
 
             <div className="flex items-center gap-2">
-              <a href="/resume.pdf" download className="download-btn bg-blue-100 text-blue-700 hover:bg-blue-200">
-                <Download size={16} />
-                <span>Resume</span>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="download-btn bg-blue-100 text-blue-700 hover:bg-blue-200">
+                <Eye size={16} />
+                <span>View Resume</span>
               </a>
-              <a href="#video-resume" className="download-btn bg-purple-100 text-purple-700 hover:bg-purple-200">
+              <Link to="/video-resume" className="download-btn bg-purple-100 text-purple-700 hover:bg-purple-200">
                 <Video size={16} />
                 <span>Video</span>
-              </a>
+              </Link>
             </div>
           </nav>
 
@@ -95,14 +96,14 @@ export const Header: React.FC = () => {
             ))}
             
             <div className="flex flex-col gap-2 p-3">
-              <a href="/resume.pdf" download className="download-btn bg-blue-100 text-blue-700 hover:bg-blue-200">
-                <Download size={16} />
-                <span>Download Resume</span>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="download-btn bg-blue-100 text-blue-700 hover:bg-blue-200">
+                <Eye size={16} />
+                <span>View Resume</span>
               </a>
-              <a href="#video-resume" className="download-btn bg-purple-100 text-purple-700 hover:bg-purple-200">
+              <Link to="/video-resume" className="download-btn bg-purple-100 text-purple-700 hover:bg-purple-200">
                 <Video size={16} />
                 <span>Video Resume</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
