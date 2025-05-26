@@ -34,9 +34,9 @@ export const Experience: React.FC = () => {
               <div className="mt-4 pt-4 border-t border-gray-100">
                 <h4 className="text-lg font-semibold mb-2 text-blue-700">Key Achievements:</h4>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Developed ASR models for Telugu language recognition</li>
+                
                   <li>Contributed to data collection for diverse language samples</li>
-                  <li>Applied machine learning techniques to improve recognition accuracy</li>
+                  
                 </ul>
               </div>
             </div>
