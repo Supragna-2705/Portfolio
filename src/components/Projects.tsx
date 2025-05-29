@@ -18,14 +18,14 @@ export const Projects: React.FC = () => {
       description: "Developing a fully automated virtual neurotherapist that guides users through personalized therapeutic activities using AI-powered chatbot interactions.",
       tools: ["React.js", "Node.js", "MySQL", "Hugging Face Transformers/spaCy", "TensorFlow/PyTorch"],
       icon: <Brain className="w-10 h-10 text-purple-600" />,
-      githubLink: undefined, // Add GitHub link if available
+      githubLink: "https://github.com/abhijithreddy05/neuronest", // Added GitHub link
     },
     {
       title: "Responsive Energy Control Systems For Next-Gen Buildings",
       description: "Developed a Responsive Energy Control System (RECS) to optimize energy usage in buildings by dynamically adjusting consumption based on real-time environmental conditions.",
       tools: ["Machine Learning (Gradient Boosting)", "Mixed Integer Linear Programming"],
       icon: <Zap className="w-10 h-10 text-yellow-600" />,
-      githubLink: "https://github.com/S7viks/MinorProject", // Your GitHub link
+      githubLink: "https://github.com/S7viks/MinorProject", // Existing GitHub link
     },
     {
       title: "Sudoku Solver",
