@@ -6,7 +6,7 @@ interface Project {
   description: string;
   tools: string[];
   icon: React.ReactNode;
-  githubLink?: string; // Optional GitHub link
+  githubLink?: string; 
 }
 
 export const Projects: React.FC = () => {
@@ -15,24 +15,24 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       title: "AI powered Virtual Neuro-therapist",
-      description: "Developing a fully automated virtual neurotherapist that guides users through personalized therapeutic activities using AI-powered chatbot interactions.",
+      description: "Developed a fully automated virtual neurotherapist that guides users through personalized therapeutic activities using AI-powered chatbot interactions.",
       tools: ["React.js", "Node.js", "MySQL", "Hugging Face Transformers/spaCy", "TensorFlow/PyTorch"],
       icon: <Brain className="w-10 h-10 text-purple-600" />,
-      githubLink: "https://github.com/abhijithreddy05/neuronest", // Added GitHub link
+      githubLink: "https://github.com/abhijithreddy05/neuronest", 
     },
     {
       title: "Responsive Energy Control Systems For Next-Gen Buildings",
       description: "Developed a Responsive Energy Control System (RECS) to optimize energy usage in buildings by dynamically adjusting consumption based on real-time environmental conditions.",
       tools: ["Machine Learning (Gradient Boosting)", "Mixed Integer Linear Programming"],
       icon: <Zap className="w-10 h-10 text-yellow-600" />,
-      githubLink: "https://github.com/S7viks/MinorProject", // Existing GitHub link
+      githubLink: "https://github.com/S7viks/MinorProject", 
     },
     {
       title: "Sudoku Solver",
       description: "Developed a Sudoku game in Python with a user-friendly interface for solving and generating puzzles.",
       tools: ["Python", "NumPy"],
       icon: <LayoutGrid className="w-10 h-10 text-blue-600" />,
-      githubLink: undefined, // Add GitHub link if available
+      githubLink: undefined, 
     },
   ];
 
